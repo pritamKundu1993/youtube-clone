@@ -1,7 +1,7 @@
 // src/components/VideoFeed.tsx
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchPopularVideos } from '../Redux/YoutubeSlice';
+import { fetchPopularVideos } from '../Redux/youtubeSlice';
 import { RootState, AppDispatch } from '../Redux/store';
 import { formatDate, formatViews, parseDuration } from '../utils';
 import { Link } from 'react-router';
