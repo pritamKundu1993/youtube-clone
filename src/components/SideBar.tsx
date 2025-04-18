@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../Redux/store';
+import { Link } from 'react-router';
 
 type SidebarItemProps = {
     icon: React.ReactNode;
@@ -38,12 +39,14 @@ const SideBar: React.FC = () => {
         >
             {/* Top Section */}
             <div className="space-y-2">
-                <SidebarItem
-                    icon={<HomeIcon />}
-                    label="Home"
-                    active
-                    isSidebarOpen={isSidebarOpen}
-                />
+                <Link to={'/'}>
+                    <SidebarItem
+                        icon={<HomeIcon />}
+                        label="Home"
+                        active
+                        isSidebarOpen={isSidebarOpen}
+                    />
+                </Link>
                 <SidebarItem icon={<FlameIcon />} label="Shorts" isSidebarOpen={isSidebarOpen} />
                 <SidebarItem
                     icon={<FolderIcon />}

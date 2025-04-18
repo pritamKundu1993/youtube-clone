@@ -1,6 +1,6 @@
 // src/redux/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import youtubeReducer from './YoutubeSlice';
+import youtubeReducer from './youtubeSlice';
 import sidebarReducer from './sidebarSlice';
 
 const store = configureStore({
